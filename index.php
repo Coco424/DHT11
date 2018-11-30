@@ -13,6 +13,9 @@ $data = file_get_contents('data.txt');
 $json = json_decode($data);
 ?>
 <p>il fait <?php echo $json->temperature;?>°C avec <?php echo $json->humidite;?>% d'humidité.</p>
-<img src="img/thermometer.jpg">
+
+<div id="thermometer">
+  <div id="bargraph"></div>
+</div>
 </body>
 </html>
