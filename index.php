@@ -22,7 +22,7 @@ $bargraph_top = 315 - $json-> temperature * 4;
 
 $filename = 'data.txt';
 if (file_exists($filename)) {
-    echo "le fichier data.txt a été modifié le : " . date ("F d Y H:i:s.", filemtime($filename));
+    echo "le fichier data.txt a été modifié le : " . date ("d F Y H:i:s.", filemtime($filename));
 }
 ?>
 
