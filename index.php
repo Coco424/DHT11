@@ -9,7 +9,7 @@
 
 
 <?php
-$data = file_get_contents('data.txt');
+$data = file_get_contents('data.json');
 $json = json_decode($data);
 
 $bargraph_heigth = 161 + $json-> temperature * 4;
@@ -18,11 +18,10 @@ $bargraph_top = 315 - $json-> temperature * 4;
 <p>Il fait <?php echo $json->temperature;?>°C avec <?php echo $json->humidite;?>% d'humidité.</p>
 
 <?php
-// Affichera : somefile.txt a été modifié le : December 29 2002 22:16:23.
 
 $filename = 'data.txt';
 if (file_exists($filename)) {
-    echo "le fichier data.txt a été modifié le : " . date ("d F Y H:i:s.", filemtime($filename));
+    echo "Le  " .date ("d/m/Y \à H:i:s.", filemtime($filename));
 }
 ?>
 
