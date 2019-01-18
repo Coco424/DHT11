@@ -2,5 +2,5 @@
 
 	$host='localhost';
 	$dbname='dht11';
-	$username='coco424';
-	$password='coco424';
+	$username='dht11';
+	$password='dht11';
